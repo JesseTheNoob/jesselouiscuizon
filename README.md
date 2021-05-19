@@ -2,7 +2,7 @@
 This is a project to highlight and showcase my skills as a web developer using ReactJS with typescript, and Laravel as a back-end.
 
 ## Installation
-1. Clone the project
+1. Clone the project `git clone --recurse-submodules https://github.com/JesseTheNoob/jesselouiscuizon.git`
 2. Install docker
 3. open terminal/cmd cd to project>laradock
 4. run `docker-compose up -d nginx mysql workspace`
