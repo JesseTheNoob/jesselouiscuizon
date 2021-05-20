@@ -3512,6 +3512,154 @@ function isAdornedStart(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/List/List.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/List/List.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "styles": () => (/* binding */ styles),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _ListContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ListContext */ "./node_modules/@material-ui/core/esm/List/ListContext.js");
+
+
+
+
+
+
+
+var styles = {
+  /* Styles applied to the root element. */
+  root: {
+    listStyle: 'none',
+    margin: 0,
+    padding: 0,
+    position: 'relative'
+  },
+
+  /* Styles applied to the root element if `disablePadding={false}`. */
+  padding: {
+    paddingTop: 8,
+    paddingBottom: 8
+  },
+
+  /* Styles applied to the root element if dense. */
+  dense: {},
+
+  /* Styles applied to the root element if a `subheader` is provided. */
+  subheader: {
+    paddingTop: 0
+  }
+};
+var List = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function List(props, ref) {
+  var children = props.children,
+      classes = props.classes,
+      className = props.className,
+      _props$component = props.component,
+      Component = _props$component === void 0 ? 'ul' : _props$component,
+      _props$dense = props.dense,
+      dense = _props$dense === void 0 ? false : _props$dense,
+      _props$disablePadding = props.disablePadding,
+      disablePadding = _props$disablePadding === void 0 ? false : _props$disablePadding,
+      subheader = props.subheader,
+      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["children", "classes", "className", "component", "dense", "disablePadding", "subheader"]);
+
+  var context = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(function () {
+    return {
+      dense: dense
+    };
+  }, [dense]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ListContext__WEBPACK_IMPORTED_MODULE_5__.default.Provider, {
+    value: context
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(Component, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__.default)(classes.root, className, dense && classes.dense, !disablePadding && classes.padding, subheader && classes.subheader),
+    ref: ref
+  }, other), subheader, children));
+});
+ true ? List.propTypes = {
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object.isRequired),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().elementType),
+
+  /**
+   * If `true`, compact vertical padding designed for keyboard and mouse input will be used for
+   * the list and list items.
+   * The prop is available to descendant components as the `dense` context.
+   */
+  dense: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, vertical padding will be removed from the list.
+   */
+  disablePadding: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * The content of the subheader, normally `ListSubheader`.
+   */
+  subheader: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__.default)(styles, {
+  name: 'MuiList'
+})(List));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/List/ListContext.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/List/ListContext.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+/**
+ * @ignore - internal component.
+ */
+
+var ListContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
+
+if (true) {
+  ListContext.displayName = 'ListContext';
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListContext);
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/ListItem/ListItem.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/ListItem/ListItem.js ***!
@@ -3840,9 +3988,9 @@ var ListItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functi
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/esm/List/List.js":
+/***/ "./node_modules/@material-ui/core/esm/Menu/Menu.js":
 /*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/List/List.js ***!
+  !*** ./node_modules/@material-ui/core/esm/Menu/Menu.js ***!
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -3855,11 +4003,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
-/* harmony import */ var _ListContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ListContext */ "./node_modules/@material-ui/core/esm/List/ListContext.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@material-ui/core/node_modules/react-is/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/HTMLElementType.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _Popover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Popover */ "./node_modules/@material-ui/core/esm/Popover/Popover.js");
+/* harmony import */ var _MenuList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../MenuList */ "./node_modules/@material-ui/core/esm/MenuList/MenuList.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _utils_setRef__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/setRef */ "./node_modules/@material-ui/core/esm/utils/setRef.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
 
 
 
@@ -3867,124 +4021,269 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+var RTL_ORIGIN = {
+  vertical: 'top',
+  horizontal: 'right'
+};
+var LTR_ORIGIN = {
+  vertical: 'top',
+  horizontal: 'left'
+};
 var styles = {
-  /* Styles applied to the root element. */
-  root: {
-    listStyle: 'none',
-    margin: 0,
-    padding: 0,
-    position: 'relative'
+  /* Styles applied to the `Paper` component. */
+  paper: {
+    // specZ: The maximum height of a simple menu should be one or more rows less than the view
+    // height. This ensures a tapable area outside of the simple menu with which to dismiss
+    // the menu.
+    maxHeight: 'calc(100% - 96px)',
+    // Add iOS momentum scrolling.
+    WebkitOverflowScrolling: 'touch'
   },
 
-  /* Styles applied to the root element if `disablePadding={false}`. */
-  padding: {
-    paddingTop: 8,
-    paddingBottom: 8
-  },
-
-  /* Styles applied to the root element if dense. */
-  dense: {},
-
-  /* Styles applied to the root element if a `subheader` is provided. */
-  subheader: {
-    paddingTop: 0
+  /* Styles applied to the `List` component via `MenuList`. */
+  list: {
+    // We disable the focus ring for mouse, touch and keyboard users.
+    outline: 0
   }
 };
-var List = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function List(props, ref) {
-  var children = props.children,
+var Menu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Menu(props, ref) {
+  var _props$autoFocus = props.autoFocus,
+      autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus,
+      children = props.children,
       classes = props.classes,
-      className = props.className,
-      _props$component = props.component,
-      Component = _props$component === void 0 ? 'ul' : _props$component,
-      _props$dense = props.dense,
-      dense = _props$dense === void 0 ? false : _props$dense,
-      _props$disablePadding = props.disablePadding,
-      disablePadding = _props$disablePadding === void 0 ? false : _props$disablePadding,
-      subheader = props.subheader,
-      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["children", "classes", "className", "component", "dense", "disablePadding", "subheader"]);
+      _props$disableAutoFoc = props.disableAutoFocusItem,
+      disableAutoFocusItem = _props$disableAutoFoc === void 0 ? false : _props$disableAutoFoc,
+      _props$MenuListProps = props.MenuListProps,
+      MenuListProps = _props$MenuListProps === void 0 ? {} : _props$MenuListProps,
+      onClose = props.onClose,
+      onEntering = props.onEntering,
+      open = props.open,
+      _props$PaperProps = props.PaperProps,
+      PaperProps = _props$PaperProps === void 0 ? {} : _props$PaperProps,
+      PopoverClasses = props.PopoverClasses,
+      _props$transitionDura = props.transitionDuration,
+      transitionDuration = _props$transitionDura === void 0 ? 'auto' : _props$transitionDura,
+      _props$variant = props.variant,
+      variant = _props$variant === void 0 ? 'selectedMenu' : _props$variant,
+      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["autoFocus", "children", "classes", "disableAutoFocusItem", "MenuListProps", "onClose", "onEntering", "open", "PaperProps", "PopoverClasses", "transitionDuration", "variant"]);
 
-  var context = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(function () {
-    return {
-      dense: dense
-    };
-  }, [dense]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ListContext__WEBPACK_IMPORTED_MODULE_5__.default.Provider, {
-    value: context
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(Component, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__.default)(classes.root, className, dense && classes.dense, !disablePadding && classes.padding, subheader && classes.subheader),
-    ref: ref
-  }, other), subheader, children));
-});
- true ? List.propTypes = {
+  var theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_7__.default)();
+  var autoFocusItem = autoFocus && !disableAutoFocusItem && open;
+  var menuListActionsRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+  var contentAnchorRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+
+  var getContentAnchorEl = function getContentAnchorEl() {
+    return contentAnchorRef.current;
+  };
+
+  var handleEntering = function handleEntering(element, isAppearing) {
+    if (menuListActionsRef.current) {
+      menuListActionsRef.current.adjustStyleForScrollbar(element, theme);
+    }
+
+    if (onEntering) {
+      onEntering(element, isAppearing);
+    }
+  };
+
+  var handleListKeyDown = function handleListKeyDown(event) {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+
+      if (onClose) {
+        onClose(event, 'tabKeyDown');
+      }
+    }
+  };
   /**
-   * The content of the component.
+   * the index of the item should receive focus
+   * in a `variant="selectedMenu"` it's the first `selected` item
+   * otherwise it's the very first item.
    */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+
+  var activeItemIndex = -1; // since we inject focus related props into children we have to do a lookahead
+  // to check if there is a `selected` item. We're looking for the last `selected`
+  // item and use the first valid item as a fallback
+
+  react__WEBPACK_IMPORTED_MODULE_2__.Children.map(children, function (child, index) {
+    if (! /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.isValidElement(child)) {
+      return;
+    }
+
+    if (true) {
+      if ((0,react_is__WEBPACK_IMPORTED_MODULE_3__.isFragment)(child)) {
+        console.error(["Material-UI: The Menu component doesn't accept a Fragment as a child.", 'Consider providing an array instead.'].join('\n'));
+      }
+    }
+
+    if (!child.props.disabled) {
+      if (variant !== "menu" && child.props.selected) {
+        activeItemIndex = index;
+      } else if (activeItemIndex === -1) {
+        activeItemIndex = index;
+      }
+    }
+  });
+  var items = react__WEBPACK_IMPORTED_MODULE_2__.Children.map(children, function (child, index) {
+    if (index === activeItemIndex) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.cloneElement(child, {
+        ref: function ref(instance) {
+          // #StrictMode ready
+          contentAnchorRef.current = react_dom__WEBPACK_IMPORTED_MODULE_6__.findDOMNode(instance);
+          (0,_utils_setRef__WEBPACK_IMPORTED_MODULE_8__.default)(child.ref, instance);
+        }
+      });
+    }
+
+    return child;
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Popover__WEBPACK_IMPORTED_MODULE_9__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    getContentAnchorEl: getContentAnchorEl,
+    classes: PopoverClasses,
+    onClose: onClose,
+    onEntering: handleEntering,
+    anchorOrigin: theme.direction === 'rtl' ? RTL_ORIGIN : LTR_ORIGIN,
+    transformOrigin: theme.direction === 'rtl' ? RTL_ORIGIN : LTR_ORIGIN,
+    PaperProps: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, PaperProps, {
+      classes: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, PaperProps.classes, {
+        root: classes.paper
+      })
+    }),
+    open: open,
+    ref: ref,
+    transitionDuration: transitionDuration
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_MenuList__WEBPACK_IMPORTED_MODULE_10__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    onKeyDown: handleListKeyDown,
+    actions: menuListActionsRef,
+    autoFocus: autoFocus && (activeItemIndex === -1 || disableAutoFocusItem),
+    autoFocusItem: autoFocusItem,
+    variant: variant
+  }, MenuListProps, {
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__.default)(classes.list, MenuListProps.className)
+  }), items));
+});
+ true ? Menu.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * A HTML element, or a function that returns it.
+   * It's used to set the position of the menu.
+   */
+  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOfType([_material_ui_utils__WEBPACK_IMPORTED_MODULE_11__.default, (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func)]),
+
+  /**
+   * If `true` (Default) will focus the `[role="menu"]` if no focusable child is found. Disabled
+   * children are not focusable. If you set this prop to `false` focus will be placed
+   * on the parent modal container. This has severe accessibility implications
+   * and should only be considered if you manage focus otherwise.
+   */
+  autoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+
+  /**
+   * Menu contents, normally `MenuItem`s.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node),
 
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object.isRequired),
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * When opening the menu will not focus the active item but the `[role="menu"]`
+   * unless `autoFocus` is also set to `false`. Not using the default means not
+   * following WAI-ARIA authoring practices. Please be considerate about possible
+   * accessibility implications.
+   */
+  disableAutoFocusItem: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+
+  /**
+   * Props applied to the [`MenuList`](/api/menu-list/) element.
+   */
+  MenuListProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * Callback fired when the component requests to be closed.
+   *
+   * @param {object} event The event source of the callback.
+   * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`, `"tabKeyDown"`.
+   */
+  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired before the Menu enters.
+   */
+  onEnter: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired when the Menu has entered.
+   */
+  onEntered: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired when the Menu is entering.
+   */
+  onEntering: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired before the Menu exits.
+   */
+  onExit: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired when the Menu has exited.
+   */
+  onExited: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * Callback fired when the Menu is exiting.
+   */
+  onExiting: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * If `true`, the menu is visible.
+   */
+  open: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool.isRequired),
 
   /**
    * @ignore
    */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  PaperProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
 
   /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
+   * `classes` prop applied to the [`Popover`](/api/popover/) element.
    */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().elementType),
+  PopoverClasses: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
 
   /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input will be used for
-   * the list and list items.
-   * The prop is available to descendant components as the `dense` context.
+   * The length of the transition in `ms`, or 'auto'
    */
-  dense: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['auto']), (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number), prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
+    appear: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number),
+    enter: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number),
+    exit: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number)
+  })]),
 
   /**
-   * If `true`, vertical padding will be removed from the list.
+   * The variant to use. Use `menu` to prevent selected items from impacting the initial focus
+   * and the vertical alignment relative to the anchor element.
    */
-  disablePadding: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * The content of the subheader, normally `ListSubheader`.
-   */
-  subheader: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node)
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['menu', 'selectedMenu'])
 } : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__.default)(styles, {
-  name: 'MuiList'
-})(List));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/List/ListContext.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/List/ListContext.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-/**
- * @ignore - internal component.
- */
-
-var ListContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
-
-if (true) {
-  ListContext.displayName = 'ListContext';
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListContext);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_12__.default)(styles, {
+  name: 'MuiMenu'
+})(Menu));
 
 /***/ }),
 
@@ -4472,305 +4771,6 @@ var MenuList = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functi
   variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['menu', 'selectedMenu'])
 } : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MenuList);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/Menu/Menu.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/Menu/Menu.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "styles": () => (/* binding */ styles),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@material-ui/core/node_modules/react-is/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/HTMLElementType.js");
-/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
-/* harmony import */ var _Popover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Popover */ "./node_modules/@material-ui/core/esm/Popover/Popover.js");
-/* harmony import */ var _MenuList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../MenuList */ "./node_modules/@material-ui/core/esm/MenuList/MenuList.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _utils_setRef__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/setRef */ "./node_modules/@material-ui/core/esm/utils/setRef.js");
-/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-var RTL_ORIGIN = {
-  vertical: 'top',
-  horizontal: 'right'
-};
-var LTR_ORIGIN = {
-  vertical: 'top',
-  horizontal: 'left'
-};
-var styles = {
-  /* Styles applied to the `Paper` component. */
-  paper: {
-    // specZ: The maximum height of a simple menu should be one or more rows less than the view
-    // height. This ensures a tapable area outside of the simple menu with which to dismiss
-    // the menu.
-    maxHeight: 'calc(100% - 96px)',
-    // Add iOS momentum scrolling.
-    WebkitOverflowScrolling: 'touch'
-  },
-
-  /* Styles applied to the `List` component via `MenuList`. */
-  list: {
-    // We disable the focus ring for mouse, touch and keyboard users.
-    outline: 0
-  }
-};
-var Menu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Menu(props, ref) {
-  var _props$autoFocus = props.autoFocus,
-      autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus,
-      children = props.children,
-      classes = props.classes,
-      _props$disableAutoFoc = props.disableAutoFocusItem,
-      disableAutoFocusItem = _props$disableAutoFoc === void 0 ? false : _props$disableAutoFoc,
-      _props$MenuListProps = props.MenuListProps,
-      MenuListProps = _props$MenuListProps === void 0 ? {} : _props$MenuListProps,
-      onClose = props.onClose,
-      onEntering = props.onEntering,
-      open = props.open,
-      _props$PaperProps = props.PaperProps,
-      PaperProps = _props$PaperProps === void 0 ? {} : _props$PaperProps,
-      PopoverClasses = props.PopoverClasses,
-      _props$transitionDura = props.transitionDuration,
-      transitionDuration = _props$transitionDura === void 0 ? 'auto' : _props$transitionDura,
-      _props$variant = props.variant,
-      variant = _props$variant === void 0 ? 'selectedMenu' : _props$variant,
-      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["autoFocus", "children", "classes", "disableAutoFocusItem", "MenuListProps", "onClose", "onEntering", "open", "PaperProps", "PopoverClasses", "transitionDuration", "variant"]);
-
-  var theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_7__.default)();
-  var autoFocusItem = autoFocus && !disableAutoFocusItem && open;
-  var menuListActionsRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  var contentAnchorRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-
-  var getContentAnchorEl = function getContentAnchorEl() {
-    return contentAnchorRef.current;
-  };
-
-  var handleEntering = function handleEntering(element, isAppearing) {
-    if (menuListActionsRef.current) {
-      menuListActionsRef.current.adjustStyleForScrollbar(element, theme);
-    }
-
-    if (onEntering) {
-      onEntering(element, isAppearing);
-    }
-  };
-
-  var handleListKeyDown = function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
-      event.preventDefault();
-
-      if (onClose) {
-        onClose(event, 'tabKeyDown');
-      }
-    }
-  };
-  /**
-   * the index of the item should receive focus
-   * in a `variant="selectedMenu"` it's the first `selected` item
-   * otherwise it's the very first item.
-   */
-
-
-  var activeItemIndex = -1; // since we inject focus related props into children we have to do a lookahead
-  // to check if there is a `selected` item. We're looking for the last `selected`
-  // item and use the first valid item as a fallback
-
-  react__WEBPACK_IMPORTED_MODULE_2__.Children.map(children, function (child, index) {
-    if (! /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.isValidElement(child)) {
-      return;
-    }
-
-    if (true) {
-      if ((0,react_is__WEBPACK_IMPORTED_MODULE_3__.isFragment)(child)) {
-        console.error(["Material-UI: The Menu component doesn't accept a Fragment as a child.", 'Consider providing an array instead.'].join('\n'));
-      }
-    }
-
-    if (!child.props.disabled) {
-      if (variant !== "menu" && child.props.selected) {
-        activeItemIndex = index;
-      } else if (activeItemIndex === -1) {
-        activeItemIndex = index;
-      }
-    }
-  });
-  var items = react__WEBPACK_IMPORTED_MODULE_2__.Children.map(children, function (child, index) {
-    if (index === activeItemIndex) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.cloneElement(child, {
-        ref: function ref(instance) {
-          // #StrictMode ready
-          contentAnchorRef.current = react_dom__WEBPACK_IMPORTED_MODULE_6__.findDOMNode(instance);
-          (0,_utils_setRef__WEBPACK_IMPORTED_MODULE_8__.default)(child.ref, instance);
-        }
-      });
-    }
-
-    return child;
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Popover__WEBPACK_IMPORTED_MODULE_9__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
-    getContentAnchorEl: getContentAnchorEl,
-    classes: PopoverClasses,
-    onClose: onClose,
-    onEntering: handleEntering,
-    anchorOrigin: theme.direction === 'rtl' ? RTL_ORIGIN : LTR_ORIGIN,
-    transformOrigin: theme.direction === 'rtl' ? RTL_ORIGIN : LTR_ORIGIN,
-    PaperProps: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, PaperProps, {
-      classes: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, PaperProps.classes, {
-        root: classes.paper
-      })
-    }),
-    open: open,
-    ref: ref,
-    transitionDuration: transitionDuration
-  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_MenuList__WEBPACK_IMPORTED_MODULE_10__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
-    onKeyDown: handleListKeyDown,
-    actions: menuListActionsRef,
-    autoFocus: autoFocus && (activeItemIndex === -1 || disableAutoFocusItem),
-    autoFocusItem: autoFocusItem,
-    variant: variant
-  }, MenuListProps, {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__.default)(classes.list, MenuListProps.className)
-  }), items));
-});
- true ? Menu.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * A HTML element, or a function that returns it.
-   * It's used to set the position of the menu.
-   */
-  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOfType([_material_ui_utils__WEBPACK_IMPORTED_MODULE_11__.default, (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func)]),
-
-  /**
-   * If `true` (Default) will focus the `[role="menu"]` if no focusable child is found. Disabled
-   * children are not focusable. If you set this prop to `false` focus will be placed
-   * on the parent modal container. This has severe accessibility implications
-   * and should only be considered if you manage focus otherwise.
-   */
-  autoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-
-  /**
-   * Menu contents, normally `MenuItem`s.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node),
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-
-  /**
-   * When opening the menu will not focus the active item but the `[role="menu"]`
-   * unless `autoFocus` is also set to `false`. Not using the default means not
-   * following WAI-ARIA authoring practices. Please be considerate about possible
-   * accessibility implications.
-   */
-  disableAutoFocusItem: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-
-  /**
-   * Props applied to the [`MenuList`](/api/menu-list/) element.
-   */
-  MenuListProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-
-  /**
-   * Callback fired when the component requests to be closed.
-   *
-   * @param {object} event The event source of the callback.
-   * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`, `"tabKeyDown"`.
-   */
-  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired before the Menu enters.
-   */
-  onEnter: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired when the Menu has entered.
-   */
-  onEntered: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired when the Menu is entering.
-   */
-  onEntering: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired before the Menu exits.
-   */
-  onExit: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired when the Menu has exited.
-   */
-  onExited: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * Callback fired when the Menu is exiting.
-   */
-  onExiting: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-
-  /**
-   * If `true`, the menu is visible.
-   */
-  open: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool.isRequired),
-
-  /**
-   * @ignore
-   */
-  PaperProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-
-  /**
-   * `classes` prop applied to the [`Popover`](/api/popover/) element.
-   */
-  PopoverClasses: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-
-  /**
-   * The length of the transition in `ms`, or 'auto'
-   */
-  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['auto']), (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number), prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
-    appear: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number),
-    enter: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number),
-    exit: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().number)
-  })]),
-
-  /**
-   * The variant to use. Use `menu` to prevent selected items from impacting the initial focus
-   * and the vertical alignment relative to the anchor element.
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['menu', 'selectedMenu'])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_12__.default)(styles, {
-  name: 'MuiMenu'
-})(Menu));
 
 /***/ }),
 
@@ -12214,13 +12214,64 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/index */ "./resources/js/components/index.tsx");
+/* harmony import */ var _components_Index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Index */ "./resources/js/components/Index.tsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_index__WEBPACK_IMPORTED_MODULE_2__.default, {}), document.getElementById("app"));
+(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Index__WEBPACK_IMPORTED_MODULE_2__.default, {}), document.getElementById("app"));
+
+/***/ }),
+
+/***/ "./resources/js/components/Index.tsx":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Index.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _common_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/Header */ "./resources/js/components/common/Header.tsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages */ "./resources/js/pages/index.tsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Index = function Index() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_Header__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+        path: "/",
+        exact: true,
+        render: _pages__WEBPACK_IMPORTED_MODULE_2__.Dashboard
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+        path: "/about",
+        exact: true,
+        render: _pages__WEBPACK_IMPORTED_MODULE_2__.About
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+        path: "*",
+        render: function render() {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+            children: "404 NO MATCH FOUND"
+          });
+        }
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 /***/ }),
 
@@ -12522,57 +12573,6 @@ var Header = function Header() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./resources/js/components/index.tsx":
-/*!*******************************************!*\
-  !*** ./resources/js/components/index.tsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _common_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/Header */ "./resources/js/components/common/Header.tsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages */ "./resources/js/pages/index.tsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-
-
-var Index = function Index() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_Header__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-        path: "/",
-        exact: true,
-        render: _pages__WEBPACK_IMPORTED_MODULE_2__.Dashboard
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-        path: "/about",
-        exact: true,
-        render: _pages__WEBPACK_IMPORTED_MODULE_2__.About
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-        path: "*",
-        render: function render() {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
-            children: "404 NO MATCH FOUND"
-          });
-        }
-      })]
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 /***/ }),
 
